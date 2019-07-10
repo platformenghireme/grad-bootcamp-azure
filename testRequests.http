@@ -1,0 +1,49 @@
+@authorisationHeader=Basic ==
+@cancelledFlightNumber=VOZ809
+@cancelledFlightDepature=2019-07-08T06:45:00
+@delayedFlightNumber=JST522
+@delayedFlightDepature=2019-07-08T18:15:00
+@onTimeFlightNumber=VOZ809
+@onTimeFlightDepature=2019-07-10T06:45:00
+@scheduledFlightNumber=VOZ809
+@scheduledFlightDepature=2019-07-11T06:45:00
+
+http://localhost:7071/api/Hello?name=paco
+
+###
+http://localhost:7071/api/GetFlightStatus?flightNumber={{cancelledFlightNumber}}&departureTime={{cancelledFlightDepature}}
+###
+http://localhost:7071/api/GetFlightStatus?flightNumber={{delayedFlightNumber}}&departureTime={{delayedFlightDepature}}
+###
+http://localhost:7071/api/GetFlightStatus?flightNumber={{onTimeFlightNumber}}&departureTime={{onTimeFlightDepature}}
+###
+http://localhost:7071/api/GetFlightStatus?flightNumber={{scheduledFlightNumber}}&departureTime={{scheduledFlightDepature}}
+
+###
+https://dpegradbootcamp-pc-func.azurewebsites.net/api/GetFlightStatus?flightNumber={{cancelledFlightNumber}}&departureTime={{cancelledFlightDepature}}
+###
+https://dpegradbootcamp-pc-func.azurewebsites.net/api/GetFlightStatus?flightNumber={{delayedFlightNumber}}&departureTime={{delayedFlightDepature}}
+###
+https://dpegradbootcamp-pc-func.azurewebsites.net/api/GetFlightStatus?flightNumber={{onTimeFlightNumber}}&departureTime={{onTimeFlightDepature}}
+###
+https://dpegradbootcamp-pc-func.azurewebsites.net/api/GetFlightStatus?flightNumber={{scheduledFlightNumber}}&departureTime={{scheduledFlightDepature}}
+###
+https://dpegradbootcamp-pc-func.azurewebsites.net/api/Hello?name=paco
+
+
+###
+https://flightxml.flightaware.com/json/FlightXML2/AirlineFlightSchedules?airline=VOZ&flightno=830&startDate=1564668000&endDate=1564754400
+Authorization: {{authorisationHeader}}
+
+###
+https://flightxml.flightaware.com/json/FlightXML2/FlightInfoEx?ident=VOZ809@1562532300
+Authorization: {{authorisationHeader}}
+
+###
+https://flightxml.flightaware.com/json/FlightXML2/FlightInfoEx?ident=VOZ875@1562572800
+Authorization: {{authorisationHeader}}
+
+###
+https://flightxml.flightaware.com/json/FlightXML2/MetarEx?airport=KJFK&startTime=0&howMany=1&offset=0
+Authorization: {{authorisationHeader}}
+

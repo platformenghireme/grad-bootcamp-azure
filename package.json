@@ -1,0 +1,16 @@
+{
+  "name": "grad-bootcamp-azure",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
